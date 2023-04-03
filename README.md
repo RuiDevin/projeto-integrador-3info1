@@ -21,8 +21,23 @@ RN001-O cliente fara seu cadrastro na loja preenchendo um formulario com informa
 RN002-O software apresentara uma tela para o cliente, para ser feita a descrição do problema com um campo para inserção de fotos e videos do aparelho eletronico em questão.
 RN003-O sistema devera gerar uma ordem de serviço quando o cliente cadrastrado deixar seu aparelho eletronico na assistencia, com uma formatação contendo informações, que aparelho é, quando o aparelho entrou, e o numero da ORDEM DE SERVIÇO.   
 RN004-Apos a detalhação do problema apos o aparelho entregue a assistencia, sera gerado uma ordem de serviço
-RN005-Sera gerado com o numero da ordem de serviço, uma barra de progresso do aparelho eletronico em estagios de 
-(Em fila/Proximo da fila/Em examinação/Orçamento Disponivel/Em reparo/Concluido)
+RN005-Orçamento:Antes de realizar qualquer serviço, a assistência técnica deve informar ao cliente o valor do reparo apos a examinação do aparelho.
+RN006-Sera gerado com o numero da ordem de serviço, uma barra de progresso do aparelho eletronico em estagios de 
+(Em fila/Proximo da fila/Em examinação/Orçamento Disponivel/Em reparo/Disponivel pra retirada)
+RN007-Apos o reparo concluido e o pagamento recebido, sera gerado a garantia de serviço de 90 dias com valor do reparo com data de saida do aparelho.
+
+Requisitos Funcionais
+
+RF001-O sistema deve permitir que clientes se cadastrem 
+RF002-O sistema deve permitir que os clientes entrem em contato com a assistencia tecnica por mensagens eletrônicas ou pessoalmente para solicitar orçamentos para seus aparelhos eletrônicos.
+RF003-O sistema deve permitir que o atendente gere uma ordem de serviço para o cliente.
+RF004-O sistema deve permitir que seja gerado um codigo da ordem de serviço
+RF005-O sistema deve permitir que o atendente possa se comunicar com o cliente para qualquer alteração fora do esperado/combinado.
+RF006-O sistema deve permitir que haja uma barra de status do serviço com o codigo.(Em fila/Proximo da fila/Em examinação/Orçamento Disponivel/Em reparo/Disponivel pra retirada)
+RF007-O sistema deve permitir que caso o orçamento não seja aprovado o aparelho seja separado em outro lugar, para ser recolhido pelo dono do aparelho apenas com  a ordem de serviço ou codigo. 
+RF008-O sistema deve permitir a geração de uma nota fiscal com garantia de 90 dias do serviço, apos o pagamento integral do reparo.
+
+
 
 
 
