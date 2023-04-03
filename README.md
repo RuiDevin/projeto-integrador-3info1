@@ -14,4 +14,17 @@ Ate então Rafael gere suas manutenções da seguinte forma...
 -Caso algum cliente faça queixas do aparelho eletronico que não funciona por causa do reparo
 -Se o cliente não aceitar orçamento, Rafael deixa o aparelho do mesmo que se encontrava quando o recebeu se possivel for, e o cliente podera vir buscar o aparelho eletronico...
 
+REGRAS DE NEGOCIO 
+
+
+RN001-O cliente fara seu cadrastro na loja preenchendo um formulario com informações cruciais para sua identificação.
+RN002-O software apresentara uma tela para o cliente, para ser feita a descrição do problema com um campo para inserção de fotos e videos do aparelho eletronico em questão.
+RN003-O sistema devera gerar uma ordem de serviço quando o cliente cadrastrado deixar seu aparelho eletronico na assistencia, com uma formatação contendo informações, que aparelho é, quando o aparelho entrou, e o numero da ORDEM DE SERVIÇO.   
+RN004-Apos a detalhação do problema apos o aparelho entregue a assistencia, sera gerado uma ordem de serviço
+RN005-Sera gerado com o numero da ordem de serviço, uma barra de progresso do aparelho eletronico em estagios de 
+(Em fila/Proximo da fila/Em examinação/Orçamento Disponivel/Em reparo/Concluido)
+
+
+
+
 
