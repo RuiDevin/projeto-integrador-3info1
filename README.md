@@ -28,14 +28,15 @@ RN007-Apos o reparo concluido e o pagamento recebido, sera gerado a garantia de 
 
 Requisitos Funcionais
 
-RF001-O sistema deve permitir que clientes se cadastrem 
-RF002-O sistema deve permitir que os clientes entrem em contato com a assistencia tecnica por mensagens eletrônicas ou pessoalmente para solicitar orçamentos para seus aparelhos eletrônicos.
-RF003-O sistema deve permitir que o atendente gere uma ordem de serviço para o cliente.
-RF004-O sistema deve permitir que seja gerado um codigo da ordem de serviço
-RF005-O sistema deve permitir que o atendente possa se comunicar com o cliente para qualquer alteração fora do esperado/combinado.
-RF006-O sistema deve permitir que haja uma barra de status do serviço com o codigo.(Em fila/Proximo da fila/Em examinação/Orçamento Disponivel/Em reparo/Disponivel pra retirada)
-RF007-O sistema deve permitir que caso o orçamento não seja aprovado o aparelho seja separado em outro lugar, para ser recolhido pelo dono do aparelho apenas com  a ordem de serviço ou codigo. 
-RF008-O sistema deve permitir a geração de uma nota fiscal com garantia de 90 dias do serviço, apos o pagamento integral do reparo.
+RF001(Cadrastramentos)-O sistema deve permitir que o cliente se cadrastre para ter acesso a os serviços.
+RF002(Acesso ao sistema)- O sistema devera permitir que o administrador tenha acesso a todas informções, o atendente a algumas areas de acesso e o cliente apenas a sua respectiva area.  
+RF003(Primero contato)-O sistema deve permitir que os clientes entrem em contato com a assistencia tecnica por mensagens eletrônicas ou pessoalmente para solicitar orçamentos para seus aparelhos eletrônicos.
+RF004(Geração de ordem de serviço)-O sistema deve permitir que o atendente gere uma ordem de serviço para o cliente.
+RF005(Codigo de acompanhamento)-O sistema deve permitir que seja gerado um codigo na ordem de serviço
+RF006(Acompahmento em tempo real)-O sistema deve permitir que haja uma barra de status do serviço com o codigo.(Em fila/Proximo da fila/Em examinação/Orçamento Disponivel/Em reparo/Disponivel pra retirada) 
+RF007(Avisos previos)-O sistema deve permitir que o atendente possa se comunicar com o cliente para qualquer alteração fora do esperado/combinado.
+RF008(Não aprovamento orçamentario)-O sistema deve permitir que caso o orçamento não seja aprovado o aparelho seja separado em outro lugar, para ser recolhido pelo dono do aparelho apenas com  a ordem de serviço ou codigo. 
+RF009(Reparo concluido)-O sistema deve permitir a geração de uma nota fiscal com garantia de 90 dias do serviço, apos o pagamento integral do reparo.
 
 
 
