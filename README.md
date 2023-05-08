@@ -38,8 +38,21 @@ RF007(Avisos previos)-O sistema deve permitir que o atendente possa se comunicar
 RF008(Não aprovamento orçamentario)-O sistema deve permitir que caso o orçamento não seja aprovado o aparelho seja separado em outro lugar, para ser recolhido pelo dono do aparelho apenas com  a ordem de serviço ou codigo. 
 RF009(Reparo concluido)-O sistema deve permitir a geração de uma nota fiscal com garantia de 90 dias do serviço, apos o pagamento integral do reparo.
 
+Requisitos não funcionais
 
+RNF001-Segurança: O formulário preenchido pelo cliente deve garantir a privacidade e segurança dos dados fornecidos.
 
+RBF002-Usabilidade: A interface do software deve ser amigável e intuitiva para permitir que o cliente descreva com clareza o problema com seu aparelho eletrônico.
+
+RNF003-Confiabilidade: O sistema deve gerar corretamente a ordem de serviço com as informações relevantes (aparelho, data de entrada, número da ordem de serviço).
+
+RNF004-Escalabilidade: O sistema deve ser capaz de gerar ordens de serviço para um grande número de clientes sem comprometer a sua eficiência.
+
+RNF005-Transparência: A assistência técnica deve informar ao cliente o valor do reparo antes de realizar qualquer serviço.
+
+RNF006-Rastreabilidade: O sistema deve fornecer uma barra de progresso para que o cliente possa acompanhar o andamento do reparo do seu aparelho eletrônico.
+
+RNF007-Confiabilidade: O sistema deve gerar corretamente a garantia de serviço de 90 dias com o valor do reparo e data de saída do aparelho.
 
 
 
