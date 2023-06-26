@@ -1,29 +1,37 @@
-(Ordem de serviços)
+
+# Projeto Integrador - Ruivo Solutions
 
 Professores: Marco André Mendes e Alann Perini.
 
 Projeto feito por Rafael Alvaro Almeida
 
-## 3- Ordem de Serviço (O.S.)
-
-**Manutenção de computadores**
-
-Rafael possui um negocio de manutenção de celulares e desktops/notebooks e deseja que seja desenvolvido para o seu negocio, um sistema de ORDEM DE SERVIÇO afim de unifromizar, otimizar e administrar sua empresa.
-
 # Situação Problema
 
-**Nessa parte a equipe deve descrever a situação problema que será resolvida pelo sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.**
+Rafael possui um negócio de manutenção de celulares,  desktops e notebooks. Ele deseja que seja desenvolvido para o seu negócio, um sistema de ORDEM DE SERVIÇO afim de uniformizar, otimizar e administrar sua empresa.
 
--Rafael, especialista em reparos de aparelhos eletrônicos, estabelece contato com os clientes através de mensagens eletrônicas ou encontros pessoais, a fim de oferecer orçamentos sem compromisso. Embora os potenciais clientes descrevam o problema que estão enfrentando, Rafael sempre realiza uma inspeção minuciosa no aparelho eletrônico para confirmar a origem e a gravidade do defeito.
-Uma vez identificado o problema, Rafael pesquisa os componentes eletrônicos necessários para o reparo, verificando os preços e prazos de entrega. Em seguida, ele entra em contato com o cliente, informando o valor do conserto e o prazo estimado para solucionar o problema do aparelho, para oferecer opções aos clientes, Rafael realiza pesquisas no mercado local, nacional e internacional, apresentando pelo menos dois ou três orçamentos diferentes, caso o cliente aceite o orçamento proposto, Rafael encomenda as peças e realiza o reparo necessário. Ao concluir o trabalho, ele notifica o cliente de que o aparelho está pronto e disponível para retirada, Rafael oferece uma garantia de três meses para os reparos realizados nos aparelhos eletrônicos, exceto para serviços de limpeza. Ele registra as garantias dos serviços em notas fiscais de compra dos componentes utilizados, uma vez que as peças adquiridas possuem garantia de três meses oferecida pelo fabricante ou distribuidora, no caso de algum cliente reclamar que o aparelho eletrônico não está funcionando corretamente após o reparo, Rafael analisa o problema e busca encontrar uma solução adequada. Se o cliente não aceitar o orçamento proposto, Rafael devolve o aparelho nas mesmas condições em que foi recebido, caso seja possível, e o cliente pode ir buscá-lo.
+Rafael, especialista em reparos de aparelhos eletrônicos, estabelece contato com os clientes através de mensagens eletrônicas ou encontros pessoais, a fim de oferecer orçamentos sem compromisso. Embora os potenciais clientes descrevam o problema que estão enfrentando, Rafael sempre realiza uma inspeção minuciosa no aparelho eletrônico para confirmar a origem e a gravidade do defeito.
+
+Uma vez identificado o problema, Rafael pesquisa os componentes eletrônicos necessários para o reparo, verificando os preços e prazos de entrega. Em seguida, ele entra em contato com o cliente, informando o valor do conserto e o prazo estimado para solucionar o problema do aparelho. 
+
+Para oferecer opções aos clientes, Rafael realiza pesquisas no mercado local, nacional e internacional, apresentando pelo menos dois ou três orçamentos diferentes. Caso o cliente aceite o orçamento proposto, Rafael encomenda as peças e realiza o reparo necessário. 
+
+Ao concluir o trabalho, ele notifica o cliente de que o aparelho está pronto e disponível para retirada. Rafael oferece uma garantia de três meses para os reparos realizados nos aparelhos eletrônicos, exceto para serviços de limpeza. Ele registra as garantias dos serviços em notas fiscais de compra dos componentes utilizados, uma vez que as peças adquiridas possuem garantia de três meses oferecida pelo fabricante ou distribuidora. 
+
+No caso de algum cliente reclamar que o aparelho eletrônico não está funcionando corretamente após o reparo, Rafael analisa o problema e busca encontrar uma solução adequada. 
+
+Se o cliente não aceitar o orçamento proposto, Rafael devolve o aparelho nas mesmas condições em que foi recebido, caso seja possível, e o cliente pode ir buscá-lo.
 
 # Descrição da proposta
 
-Pensando nisso sera desenvolvido um software para automatizar o serviço da assistencia de Rafael com gerenciamento de venda, gasto, garantia, andamento do serviço
+TODO: DESCREVER MELHOR A PROPOSTA INCLUINDO ORÇAMENTO, INFORMAÇÕES DO CLIENTE, 
+
+Pensando nisso sera desenvolvido um software para automatizar o serviço da assistência de Rafael com gerenciamento de venda, gasto, garantia, andamento do serviço.
 
 # Regras de negócio
 
-RN001-O cliente fara seu cadrastro na loja preenchendo um formulario com informações cruciais para sua identificação.
+TODO: REVISAR ORTOGRAFIA E FORMATO
+
+**RN001 - Cadastro de cliente:** - O cliente fará seu cadrastro na loja preenchendo um formulário com informações cruciais para sua identificação.
 
 RN002-O software apresentara uma tela para o cliente, para ser feita a descrição do problema com um campo para inserção de fotos e videos do aparelho eletronico em questão.
 
