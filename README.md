@@ -91,7 +91,7 @@ TODO: REVISAR ORTOGRAFIA E FORMATO
 **Descrição:** O sistema deve permitir que o atendente se comunique com o cliente para informar sobre quaisquer alterações fora do esperado ou combinado.
 **Dados necessários:** Mensagem do atendente, informações de contato do cliente.
 
-Usuários: Atendente, cliente.
+**Usuários:** Atendente, cliente.
 
 **RF008 (Não aprovação orçamentária):**
 **Descrição:** O sistema deve permitir que, caso o orçamento não seja aprovado pelo cliente, o aparelho seja separado em um local específico para ser recolhido pelo dono do aparelho, apenas com a apresentação da ordem de serviço ou do código.
@@ -103,7 +103,7 @@ Usuários: Atendente, cliente.
 Descrição: O sistema deve permitir a geração de uma nota fiscal com garantia de 90 dias do serviço, após o pagamento integral do reparo.
 Dados necessários: Informações do cliente, valor do reparo, data de pagamento.
 
-Usuários: Atendente.
+**Usuários:** Atendente.
 
 # Requisitos não funcionais
 
