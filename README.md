@@ -67,19 +67,19 @@ TODO: REVISAR ORTOGRAFIA E FORMATO
 **Descrição:** O sistema deve permitir que os clientes entrem em contato com a assistência técnica por meio de mensagens eletrônicas ou pessoalmente, para solicitar orçamentos para seus aparelhos eletrônicos.
 **Dados necessários:** Mensagem do cliente, informações de contato.
 
-Usuários: Cliente.
+**Usuários:** Cliente.
 
 **RF004 (Geração de ordem de serviço):**
 **Descrição:** O sistema deve permitir que o atendente gere uma ordem de serviço para o cliente.
 **Dados necessários:** Informações do cliente, descrição do problema.
 
-Usuários: Atendente.
+**Usuários:** Atendente.
 
 **RF005 (Código de acompanhamento):
 **Descrição:** O sistema deve permitir que seja gerado um código na ordem de serviço para possibilitar o acompanhamento do serviço.
 **Dados necessários:** Código de acompanhamento, número da ordem de serviço.
 
-Usuários: Todos os níveis de usuário.
+**Usuários:** Todos os níveis de usuário.
 
 **RF006 (Acompanhamento em tempo real):**
 **Descrição:** O sistema deve exibir uma barra de status do serviço com base no código de acompanhamento, permitindo acompanhar em tempo real o estágio do aparelho eletrônico (Em fila, Próximo da fila, Em exame, Orçamento disponível, Em reparo, Disponível para retirada).
@@ -107,23 +107,16 @@ Usuários: Atendente.
 
 # Requisitos não funcionais
 
-**RNF001 - Segurança:**
-**Descrição:** O formulário preenchido pelo cliente deve garantir a privacidade e segurança dos dados fornecidos.
+**RNF001 - Segurança:** O formulário preenchido pelo cliente deve garantir a privacidade e segurança dos dados fornecidos.
 
-**RNF002 - Usabilidade:**
-**Descrição:** A interface do software deve ser amigável e intuitiva para permitir que o cliente descreva com clareza o problema com seu aparelho eletrônico.
+**RNF002 - Usabilidade:** A interface do software deve ser amigável e intuitiva para permitir que o cliente descreva com clareza o problema com seu aparelho eletrônico.
 
-**RNF003 - Confiabilidade:**
-**Descrição:** O sistema deve gerar corretamente a ordem de serviço com as informações relevantes, como aparelho, data de entrada e número da ordem de serviço.
+**RNF003 - Confiabilidade:**O sistema deve gerar corretamente a ordem de serviço com as informações relevantes, como aparelho, data de entrada e número da ordem de serviço.
 
-**RNF004 - Escalabilidade:**
-**Descrição:** O sistema deve ser capaz de gerar ordens de serviço para um grande número de clientes sem comprometer a eficiência.
+**RNF004 - Escalabilidade:**O sistema deve ser capaz de gerar ordens de serviço para um grande número de clientes sem comprometer a eficiência.
 
-**RNF005 - Transparência:**
-**Descrição:** A assistência técnica deve informar ao cliente o valor do reparo antes de realizar qualquer serviço.
+**RNF005 - Transparência:** A assistência técnica deve informar ao cliente o valor do reparo antes de realizar qualquer serviço.
 
-**RNF006 - Rastreabilidade:**
-**Descrição:** O sistema deve fornecer uma barra de progresso para que o cliente possa acompanhar o andamento do reparo do seu aparelho eletrônico.
+**RNF006 - Rastreabilidade:** O sistema deve fornecer uma barra de progresso para que o cliente possa acompanhar o andamento do reparo do seu aparelho eletrônico.
 
-**RNF007 - Confiabilidade:**
-**Descrição:** O sistema deve gerar corretamente a garantia de serviço de 90 dias, contendo o valor do reparo e a data de saída do aparelho.
+**RNF007 - Confiabilidade:** O sistema deve gerar corretamente a garantia de serviço de 90 dias, contendo o valor do reparo e a data de saída do aparelho.
