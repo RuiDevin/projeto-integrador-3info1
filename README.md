@@ -23,61 +23,107 @@ Se o cliente não aceitar o orçamento proposto, Rafael devolve o aparelho nas m
 
 # Descrição da proposta
 
-TODO: DESCREVER MELHOR A PROPOSTA INCLUINDO ORÇAMENTO, INFORMAÇÕES DO CLIENTE, 
+A proposta é desenvolver um software que visa automatizar e facilitar o serviço de assistência técnica oferecido por Rafael, abordando diversos aspectos do negócio, como gerenciamento de vendas, gastos, garantias e o acompanhamento do andamento dos serviços.
 
-Pensando nisso sera desenvolvido um software para automatizar o serviço da assistência de Rafael com gerenciamento de venda, gasto, garantia, andamento do serviço.
+O software será projetado para atender tanto o gestor do negócio quanto os funcionários da assistência técnica. Cada nível de usuário terá acesso a recursos e funcionalidades específicas, de acordo com suas responsabilidades e necessidades.
+
+Para o gestor, o software fornecerá uma visão geral do desempenho da assistência técnica, permitindo o acompanhamento das vendas realizadas, dos gastos incorridos e das garantias em vigor. Ele também poderá monitorar o andamento dos serviços, verificar o status de cada caso e tomar medidas adequadas para garantir a satisfação dos clientes.
+
+Já para os funcionários, o software oferecerá recursos para registrar as vendas realizadas, inserir os gastos incorridos, cadastrar e gerenciar as garantias dos produtos e atualizar o status dos serviços em andamento. Também poderá disponibilizar uma agenda de atendimentos, facilitando a organização e o planejamento das atividades diárias.
 
 # Regras de negócio
 
 TODO: REVISAR ORTOGRAFIA E FORMATO
 
-**RN001 - Cadastro de cliente:** - O cliente fará seu cadrastro na loja preenchendo um formulário com informações cruciais para sua identificação.
+**RN001 - Cadastro de cliente:** O cliente fará seu cadastro na loja preenchendo um formulário com informações cruciais para sua identificação.
 
-RN002-O software apresentara uma tela para o cliente, para ser feita a descrição do problema com um campo para inserção de fotos e videos do aparelho eletronico em questão.
+**RN002 - Descrição do problema:** O software apresentará uma tela para o cliente, onde ele poderá fazer a descrição do problema com um campo para inserção de fotos e vídeos do aparelho eletrônico em questão.
 
-RN003-O sistema devera gerar uma ordem de serviço quando o cliente cadrastrado deixar seu aparelho eletronico na assistencia, com uma formatação contendo informações, que aparelho é, quando o aparelho entrou, e o numero da ORDEM DE SERVIÇO.
+**RN003 - Geração da ordem de serviço:** O sistema deverá gerar uma ordem de serviço quando o cliente cadastrado deixar seu aparelho eletrônico na assistência. A ordem de serviço conterá informações como qual aparelho é, quando o aparelho entrou e o número da Ordem de Serviço (OS).
 
-RN004-Apos a detalhação do problema apos o aparelho entregue a assistencia, sera gerado uma ordem de serviço 
+**RN004 - Detalhamento do problema:** Após o aparelho ser entregue à assistência, será gerada uma ordem de serviço contendo a descrição detalhada do problema.
 
-RN005-Orçamento:Antes de realizar qualquer serviço, a assistência técnica deve informar ao cliente o valor do reparo apos a examinação do aparelho.
+**RN005 - Orçamento:** Antes de realizar qualquer serviço, a assistência técnica deve informar ao cliente o valor do reparo após a examinação do aparelho.
 
-RN006-Sera gerado com o numero da ordem de serviço, uma barra de progresso do aparelho eletronico em estagios de (Em fila/Proximo da fila/Em examinação/Orçamento Disponivel/Em reparo/Disponivel pra retirada).
+**RN006 - Barra de progresso:** Será gerada uma barra de progresso, utilizando o número da ordem de serviço, para acompanhar os estágios do aparelho eletrônico, como Em fila, Próximo da fila, Em examinação, Orçamento disponível, Em reparo e Disponível para retirada.
 
-RN007-Apos o reparo concluido e o pagamento recebido, sera gerado a garantia de serviço de 90 dias com valor do reparo com data de saida do aparelho.
+**RN007 - Garantia de serviço:** Após a conclusão do reparo e o recebimento do pagamento, será gerada uma garantia de serviço de 90 dias, contendo o valor do reparo e a data de saída do aparelho.
 
 # Requisitos funcionais
 
-RF001(Cadrastramentos)-O sistema deve permitir que o cliente se cadrastre para ter acesso a os serviços.
+**RF001 (Cadastro de clientes):**
+**Descrição:** O sistema deve permitir que o cliente se cadastre para ter acesso aos serviços.
+**Dados necessários:** Nome, endereço, telefone, e-mail, senha.
 
-RF002(Acesso ao sistema)- O sistema devera permitir que o administrador tenha acesso a todas informções, o atendente a algumas areas de acesso e o cliente apenas a sua respectiva area.
+**Usuários:** Todos os níveis de usuário.
 
-RF003(Primero contato)-O sistema deve permitir que os clientes entrem em contato com a assistencia tecnica por mensagens eletrônicas ou pessoalmente para solicitar orçamentos para seus aparelhos eletrônicos.
+**RF002 (Acesso ao sistema):**
+**Descrição:** O sistema deve permitir diferentes níveis de acesso aos usuários. O administrador terá acesso a todas as informações, o atendente terá acesso a algumas áreas específicas e o cliente terá acesso apenas à sua área pessoal.
+**Dados necessários:** Nível de acesso (administrador, atendente, cliente), dados de autenticação (usuário e senha).
 
-RF004(Geração de ordem de serviço)-O sistema deve permitir que o atendente gere uma ordem de serviço para o cliente.
+**Usuários:** Administrador, atendente, cliente.
 
-RF005(Codigo de acompanhamento)-O sistema deve permitir que seja gerado um codigo na ordem de serviço.
+**RF003 (Primeiro contato):**
+**Descrição:** O sistema deve permitir que os clientes entrem em contato com a assistência técnica por meio de mensagens eletrônicas ou pessoalmente, para solicitar orçamentos para seus aparelhos eletrônicos.
+**Dados necessários:** Mensagem do cliente, informações de contato.
 
- 
- RF006(Acompahmento em tempo real)-O sistema deve permitir que haja uma barra de status do serviço com o codigo.(Em fila/Proximo da fila/Em examinação/Orçamento Disponivel/Em reparo/Disponivel pra retirada).
- 
-RF007(Avisos previos)-O sistema deve permitir que o atendente possa se comunicar com o cliente para qualquer alteração fora do esperado/combinado.
+Usuários: Cliente.
 
-RF008(Não aprovamento orçamentario)-O sistema deve permitir que caso o orçamento não seja aprovado o aparelho seja separado em outro lugar, para ser recolhido pelo dono do aparelho apenas com a ordem de serviço ou codigo.
+**RF004 (Geração de ordem de serviço):**
+**Descrição:** O sistema deve permitir que o atendente gere uma ordem de serviço para o cliente.
+**Dados necessários:** Informações do cliente, descrição do problema.
 
-RF009(Reparo concluido)-O sistema deve permitir a geração de uma nota fiscal com garantia de 90 dias do serviço, apos o pagamento integral do reparo.
+Usuários: Atendente.
+
+**RF005 (Código de acompanhamento):
+**Descrição:** O sistema deve permitir que seja gerado um código na ordem de serviço para possibilitar o acompanhamento do serviço.
+**Dados necessários:** Código de acompanhamento, número da ordem de serviço.
+
+Usuários: Todos os níveis de usuário.
+
+**RF006 (Acompanhamento em tempo real):**
+**Descrição:** O sistema deve exibir uma barra de status do serviço com base no código de acompanhamento, permitindo acompanhar em tempo real o estágio do aparelho eletrônico (Em fila, Próximo da fila, Em exame, Orçamento disponível, Em reparo, Disponível para retirada).
+**Dados necessários:** Código de acompanhamento.
+
+**Usuários:** Todos os níveis de usuário.
+
+**RF007 (Avisos prévios):**
+**Descrição:** O sistema deve permitir que o atendente se comunique com o cliente para informar sobre quaisquer alterações fora do esperado ou combinado.
+**Dados necessários:** Mensagem do atendente, informações de contato do cliente.
+
+Usuários: Atendente, cliente.
+
+**RF008 (Não aprovação orçamentária):**
+**Descrição:** O sistema deve permitir que, caso o orçamento não seja aprovado pelo cliente, o aparelho seja separado em um local específico para ser recolhido pelo dono do aparelho, apenas com a apresentação da ordem de serviço ou do código.
+**Dados necessários:** Status do orçamento, número da ordem de serviço ou código.
+
+**Usuários:** Atendente, cliente.
+
+**RF009 (Reparo concluído):**
+Descrição: O sistema deve permitir a geração de uma nota fiscal com garantia de 90 dias do serviço, após o pagamento integral do reparo.
+Dados necessários: Informações do cliente, valor do reparo, data de pagamento.
+
+Usuários: Atendente.
 
 # Requisitos não funcionais
 
-RNF001-Segurança: O formulário preenchido pelo cliente deve garantir a privacidade e segurança dos dados fornecidos.
+**RNF001 - Segurança:**
+**Descrição:** O formulário preenchido pelo cliente deve garantir a privacidade e segurança dos dados fornecidos.
 
-RBF002-Usabilidade: A interface do software deve ser amigável e intuitiva para permitir que o cliente descreva com clareza o problema com seu aparelho eletrônico.
+**RNF002 - Usabilidade:**
+**Descrição:** A interface do software deve ser amigável e intuitiva para permitir que o cliente descreva com clareza o problema com seu aparelho eletrônico.
 
-RNF003-Confiabilidade: O sistema deve gerar corretamente a ordem de serviço com as informações relevantes (aparelho, data de entrada, número da ordem de serviço).
+**RNF003 - Confiabilidade:**
+**Descrição:** O sistema deve gerar corretamente a ordem de serviço com as informações relevantes, como aparelho, data de entrada e número da ordem de serviço.
 
-RNF004-Escalabilidade: O sistema deve ser capaz de gerar ordens de serviço para um grande número de clientes sem comprometer a sua eficiência.
+**RNF004 - Escalabilidade:**
+**Descrição:** O sistema deve ser capaz de gerar ordens de serviço para um grande número de clientes sem comprometer a eficiência.
 
-RNF005-Transparência: A assistência técnica deve informar ao cliente o valor do reparo antes de realizar qualquer serviço.
+**RNF005 - Transparência:**
+**Descrição:** A assistência técnica deve informar ao cliente o valor do reparo antes de realizar qualquer serviço.
 
-RNF006-Rastreabilidade: O sistema deve fornecer uma barra de progresso para que o cliente possa acompanhar o andamento do reparo do seu aparelho eletrônico.
+**RNF006 - Rastreabilidade:**
+**Descrição:** O sistema deve fornecer uma barra de progresso para que o cliente possa acompanhar o andamento do reparo do seu aparelho eletrônico.
 
-RNF007-Confiabilidade: O sistema deve gerar corretamente a garantia de serviço de 90 dias com o valor do reparo e data de saída do aparelho.
+**RNF007 - Confiabilidade:**
+**Descrição:** O sistema deve gerar corretamente a garantia de serviço de 90 dias, contendo o valor do reparo e a data de saída do aparelho.
